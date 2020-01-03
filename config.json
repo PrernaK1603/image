@@ -1,0 +1,88 @@
+{
+  "images": [
+    {
+      "tasks": ["minify_image", "image_sprite"],
+      "src_dir": "src/assets/image/",
+      "src_img": [
+        "feature-check.png",
+        "feature-tabs-lifelock.png",
+        "feature-tabs-vpn.png",
+        "minus.png"
+      ],
+      "temp_img_dir": "temp/assets/image/",
+      "temp_img": "image-sprite2.png",
+      "temp_scss_dir": "temp/assets/image/",
+      "temp_scss": "image-sprite2.scss",
+      "dist_img": "dist/assets/image/"
+    },
+    {
+      "tasks": ["minify_image"],
+      "src_dir": "src/assets/image/",
+      "src_img": ["*.*"],
+      "temp_img_dir": "temp/assets/image/",
+      "temp_img": "image-sprite3.png",
+      "temp_scss_dir": "temp/assets/image/",
+      "temp_scss": "image-sprite3.scss",
+      "dist_img": "dist/assets/image/"
+    },
+    {
+      "tasks": ["image_sprite", "minify_image"],
+      "src_dir": "src/assets/image/",
+      "src_img": ["*.*"],
+      "temp_img_dir": "temp/assets/image/",
+      "temp_img": "image-sprite4.png",
+      "temp_scss_dir": "temp/assets/image/",
+      "temp_scss": "image-sprite4.scss",
+      "dist_img": "dist/assets/image/"
+    },
+    {
+      "tasks": ["image_sprite"],
+      "src_dir": "src/assets/image/",
+      "src_img": ["plus.png"],
+      "temp_img_dir": "temp/assets/image/",
+      "temp_scss_dir": "temp/assets/image",
+      "temp_img": "image-sprite1.png",
+      "temp_scss": "image-sprite1.scss",
+      "dist_img": "dist/assets/image"
+    }
+  ],
+  "scss_css": {
+    "scss_src": "src/styles/*.scss",
+    "dest_css": "src/styles",
+    "css_src": "src/components/**/*.css",
+    "dest_mini_css": "dest",
+    "con_css_src": "dest/*.css",
+    "con_css_file": "concate.css",
+    "con_css_dest": "dest",
+    "append_css_src": "src/styles/style.css",
+    "rename": "style.min.css",
+    "css_dest": "dest"
+  },
+  "mini_script": {
+    "script_src": "src/components/**/*.js",
+    "script_dest": "dest",
+    "con_script_src": "dest/*.js",
+    "con_script_file": "concate.js",
+    "con_script_dest": "dest"
+  },
+  "mini_json": {
+    "json_src": "config/*.json",
+    "json_dest": "build/json"
+  },
+  "read_file": {
+    "read_html": "dest/index.min.html",
+    "read_js": "src/scripts/script.js",
+    "read_css": "dest/style.min.css"
+  },
+  "create_js": {
+    "js_src": "config/temp.js",
+    "rename": "output.js",
+    "js_dest": "dest"
+  },
+  "html_content": {
+    "html_src": "src/index.html",
+    "querySelect": ".background",
+    "rename": "index.min.html",
+    "html_dest": "dest"
+  }
+}
